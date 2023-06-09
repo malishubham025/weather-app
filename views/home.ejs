@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/home.css">    
+<title>Document</title>
+</head>
+<body>
+    
+    <h1 class="flag"><%=flag%></h1>
+    <%console.log(info)%>
+    <div class="main">
+        <div class="partone">
+            
+            <div class="date">
+                <h4 class="time"><%=time%></h4>
+                <h2  class="day"><%=day%> , <%=date%> <%=month%> <%=year%></h2>
+
+        
+            </div>
+            <div class="city">
+            <p class="p1"><%=city%></p>
+            <p class="p2"><%=country%><p>
+            </div>
+            <div class="flash">
+                
+                <div class="temp">
+                      <%=info.current[2]%>
+                </div>
+                
+                <div class="des">
+                    <div class="condotion">
+                    <img src=" https://openweathermap.org/img/wn/<%=imgurl%>@2x.png">
+                    
+                    <%=info.current[3]%>
+                   </div>
+                   <div class="humid">
+                    
+                    <img  src="photos/humid2.png"  alt="">
+                    <%=info.current[1]%>
+                  </div>
+                  <div class="speed">
+                    <img src="photos/⁬diiwhh.png" alt="">
+                    <%=info.current[0]%>
+                  </div>
+                </div>
+
+                
+            </div>
+          <div class="for ">
+            <div class="rotate">
+
+            </div>
+            <div class="sec">
+                
+            </div>
+            <div class="sec third">
+                
+            </div>
+            <div class="sec fourth">
+                
+            </div>
+            <div class="sec fifth">
+                
+            </div>
+            <div class="sec sixth">
+                
+            </div>
+            <form action="/" method="post">
+                <input type="text" name="city" placeholder="City Name">
+                
+                <button type="submit" class="btn btn-light ">Search</button>
+            </form>
+          </div>
+        </div>
+           
+   
+        <div class="video" >
+                    <div class="week">
+                        <div class="expand">
+                            <div class="labels">
+                                <label for="#one" class="element"></label>
+                                <label for="#two" class="element"></label>
+                                <label for="#three" class="element"></label>
+                                <label for="#four" class="element"></label>
+                            </div>
+                          <div class="real" id="inner">
+
+                           </div>
+                        </div>
+                        <div class="sunday">
+                            <div class="day1">
+                                   <div id="one">
+                                    <h3><%=bDays[3]%></h3>
+                                    <p><%=info.four[3]%></p>
+                                   </div>
+                            </div>
+                            <div class="day2">
+                                <div id="two">
+                                    <h3><%=bDays[2]%></h3>
+                                    <p><%=info.four[2]%></p>
+                                </div>                                
+                            </div>
+                            <div class="day3">
+                                <div id="three">
+                                    <h3><%=bDays[1]%></h3>
+                                    <p><%=info.four[1]%></p>
+                                </div>                                
+                            </div>
+                            <div class="day4">
+                                <div id="four">
+                                    <h3><%=bDays[0]%></h3>
+                                    <p><%=info.four[0]%></p>
+                                </div>                                
+                            </div>
+
+                        </div>
+                    </div>
+                    
+            
+            <!-- <img class="one" src="photos/mountain.jpg" alt=""> -->
+            <img class="two" src="photos/mountain.jpg" alt="">
+            
+        </div>
+        
+    </div>
+    
+    
+    
+   <script src="js/app.js"></script>
+</body>
+</html>
